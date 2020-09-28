@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Calculadora</title>
+		<meta charset="UTF-8">
+		<link href="Style.css" rel="stylesheet" type="text/css">
+		<script src="Javascript.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	</head>
+
+
+	<body>
+
+		<div id= "main">
+
+			<h1 id = "Saludo">xx</h1>
+
+		<div id = "Calculadora">
+
+			<div id ="Screen">
+
+				
+				<textarea id= "num" maxlength="6" ></textarea>
+				<textarea id= "ResultScreen" maxlength="6">0</textarea>
+				
+
+
+			</div>
+			<br>
+
+
+			<div id ="teclado">
+
+				<div class= "line">
+
+					<input type="button" class="button" value="x&#178;" onclick="OneNumber(10)"  /> <!--cuadrad-->
+					<input type="button" class="button" value="1/x" onclick="OneNumber(20)"  /> <!--Inverso-->
+					<input type="button" class="button" value="&#x0221A;x" onclick="OneNumber(30)"  /><!--Raiz cuadrada-->
+					<input type="button" class="button" value="x&#94;y" onclick="operation('^')"  /><!--Raiz cuadrada-->
+					<br>
+				</div>
+				<div class= "line">
+				
+					<input type="button" class="button" value="PE" onclick="OneNumber(40)"  /> <!--Parte entera-->
+					<input type="button" class="button" value="C" onclick="Clear()"  />
+					<input type="button" class="button" value="DEL" onclick="operation('/')"  />
+					<input type="button" class="button" value="/" onclick="operation('/')"  />
+				<br>
+				</div>
+					<div class= "line">
+					<input type="button" class="button" value="7" onclick="number('7')"/>
+					<input type="button" class="button" value="8" onclick="number('8')"/>
+					<input type="button" class="button" value="9" onclick="number('9')"/>
+					<input type="button" class="button" value="*" onclick="operation('*')"  />
+				<br>
+				</div>
+				<div class= "line">
+					<input type="button" class="button" value="4" onclick="number('4')"/>
+					<input type="button" class="button" value="5" onclick="number('5')"/>
+					<input type="button" class="button" value="6" onclick="number('6')"/>
+					<input type="button" class="button" value="+" onclick="operation('+')"  />
+
+				<br>
+				</div>
+				<div class= "line">
+					<input type="button" class="button" value="1" onclick="number('1')"/>
+					<input type="button" class="button" value="2" onclick="number('2')"/>
+					<input type="button" class="button" value="3" onclick="number('3')"/>
+					<input type="button" class="button" value="-" onclick="operation('-')"  />
+				<br>
+				</div>
+				<div class= "line">
+					<input type="button" class="button" value="&pi;" onclick="OneNumber(50)"  /><!--Numero PI-->
+					<input type="button" class="button" value="0" onclick="number('0')"/>
+					<input type="button" class="button" value="." onclick="number('.')"  />
+					<input type="button" class="button" value="=" onclick="match()"  />
+				</div>
+
+
+			</div>
+
+
+
+
+			
+
+		</div>
+		<br>
+
+		</div>
+
+
+
+
+
+
+
+	</body>
+
+
+
+
+</html>
